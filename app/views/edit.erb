@@ -5,7 +5,7 @@
   </head>
   <body>
   
-    <form action="/posts/<% @posts.id%>" method="post">
+    <form action="/posts/<% @post2.id%>" method="post">
       <input id="hidden" type="hidden" name="_method" value="patch">
       <label for="name"><%= @posts.name%></label>
       <input type="text" name="name"><br>
