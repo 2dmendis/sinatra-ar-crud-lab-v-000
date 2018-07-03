@@ -6,5 +6,11 @@
   <body>
     <h1> <%= @posts.name%></h1>
     <p><%= @posts.content%></p>
+    
+    <form method="post" action="/posts/<%=@posts.id%>/delete">
+      <input id="hidden" type="hidden" name="_method" value="DELETE">
+      <input type="subit" value="delete">
+    </form>
+    
   </body>
 </html>
